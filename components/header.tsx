@@ -13,6 +13,7 @@ const Header:React.FC=()=>{
         <header className={styles.header}>
             <div>header</div>
             <Link href="/">home</Link>
+            <Link href={"/board"}>board</Link>
             <Login/>
         </header>
     )

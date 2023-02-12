@@ -11,6 +11,8 @@ export type RootState = ReturnType<typeof rootReducer>;
 let initialRootState: RootState;
 export const useSelector: TypedUseSelectorHook<RootState> = useReduxSelector;
 
+// app구조 에서는 redux-wrapper x, devtools x, clientcompo에서만
+
 // const reducer = (state:any, action:any) => {
 //     if(action.type==HYDRATE){
 //         if(state==initialRootState){

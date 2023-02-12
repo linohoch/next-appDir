@@ -1,23 +1,19 @@
 import Header from "../../components/header";
-import ArticleList from "./ArticleList";
 import React from "react";
 
-function RootLayout ({
+function Layout ({
      children
 }:{
     children:React.ReactNode;
 }) {
     return (
-        <main>
-            <div>
-                {/* @ts-ignore */}
-                <ArticleList/>
-            </div>
-            <div>
+        // <main>
+            <>
+                boardLayout
                 {children}
-            </div>
-        </main>
+            </>
+        // </main>
 
     )
 }
-export default RootLayout
+export default Layout

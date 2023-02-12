@@ -1,11 +1,12 @@
 import { DefaultSession} from "next-auth";
+import {UserType} from "../store/user";
 
-export function UserCard({ user }:{ user:DefaultSession["user"]}){
+export function UserCard( user : DefaultSession["user"]){
 
     return (
         <div>
-            <p>username- {user?.name}</p>
-            <p>useremail- {user?.email}</p>
+            <p>useremail- {user?.name}</p>
+            {JSON.stringify(user)}
         </div>
     )
 }

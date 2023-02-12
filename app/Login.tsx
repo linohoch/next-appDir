@@ -4,13 +4,15 @@ import {useSession, signIn, signOut} from "next-auth/react";
 import {UserCard} from "./userCard";
 
 export default function Login (){
-    const { data : session } = useSession();
+    const { data : session , status} = useSession();
 
     if(session){
         return(
             <>
                 <button onClick={()=>signOut()} type="button">Sign out</button>
-                <UserCard user={session?.user}/>
+                <div>
+                    <p>useremail- {session.user?.userId}</p>
+                </div>
             </>
         )
     } else {

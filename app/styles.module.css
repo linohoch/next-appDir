@@ -1,3 +1,10 @@
 .test {
     background-color: #0070f3;
+
+    border-radius: 50% 50% 50% 50%;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    text-decoration: none;
+    overflow: hidden;
 }
